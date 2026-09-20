@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call for Papers | Mind, Behaviour & Decision-Making 2026 — University of East Anglia</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            uea: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#b9ddfd',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+              navy: '#0b1d3a',
+              deep: '#07152b',
+              accent: '#0ea5e9',
+              gold: '#d97706',
+              teal: '#0d9488'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            serif: ['Newsreader', 'Georgia', 'Cambria', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .shadow-md, .shadow-xl, .shadow-2xl { box-shadow: none !important; }
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(14, 165, 233, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-uea-600 selection:text-white">
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="no-print bg-uea-navy text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800 flex justify-between items-center">
+    <div class="container mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-white">Call for Papers is Now Open</span>
+        <span class="hidden md:inline text-slate-400">| Submission Deadline: October 15, 2026</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <span class="flex items-center gap-1 text-slate-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sky-400"></i> Norwich, United Kingdom
+        </span>
+        <a href="#submit" class="text-sky-400 hover:text-sky-300 transition-colors underline font-semibold">Submit Paper &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <header class="no-print sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm transition-all">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo / Title -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-uea-navy to-uea-800 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+          <span>UEA</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold text-slate-900 tracking-tight text-base sm:text-lg leading-tight group-hover:text-uea-700 transition-colors">
+            Mind, Behaviour & Decision-Making
+          </span>
+          <span class="text-xs font-medium text-slate-500">
+            Psychology & Behavioural Science · 2026
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#about" class="hover:text-uea-700 transition-colors">About</a>
+        <a href="#themes" class="hover:text-uea-700 transition-colors">Themes</a>
+        <a href="#guidelines" class="hover:text-uea-700 transition-colors">Guidelines</a>
+        <a href="#dates" class="hover:text-uea-700 transition-colors">Important Dates</a>
+        <a href="#venue" class="hover:text-uea-700 transition-colors">Venue & Travel</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <button onclick="window.print()" title="Print CFP / Save PDF" class="no-print p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors">
+          <i data-lucide="printer" class="w-5 h-5"></i>
+        </button>
+        <a href="#submit" class="inline-flex items-center gap-2 bg-uea-navy hover:bg-uea-800 text-white text-sm font-semibold px-4 py-2.5 rounded-lg shadow hover:shadow-md transition-all duration-200">
+          <span>Submit Paper</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-gradient-to-b from-uea-deep via-uea-navy to-slate-900 text-white overflow-hidden pt-16 pb-24 md:pt-24 md:pb-32">
+    <!-- Subtle Background Glow / Texture -->
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-sky-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl mx-auto text-center space-y-7">
+        
+        <!-- Host Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-sky-200 badge-glow">
+          <i data-lucide="sparkles" class="w-4 h-4 text-sky-400"></i>
+          <span>University of East Anglia · Norwich, UK</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+          Mind, Behaviour & <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-teal-300 to-cyan-200">Decision-Making</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg sm:text-xl text-slate-300 font-serif italic max-w-2xl mx-auto">
+          An Interdisciplinary Conference on Cognitive Architectures, Behavioral Economics, and Real-World Impact
+        </p>
+
+        <!-- Co-Hosts Tag -->
+        <p class="text-sm sm:text-base text-slate-300 font-medium">
+          Jointly organised by the <span class="text-white font-semibold underline decoration-sky-400/60 underline-offset-4">Department of Behavioral Science</span> and the <span class="text-white font-semibold underline decoration-sky-400/60 underline-offset-4">School of Psychology</span>
+        </p>
+
+        <!-- Key Meta Information Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 max-w-3xl mx-auto text-left">
+          <!-- Dates -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-xl flex items-start gap-3.5">
+            <div class="p-2.5 rounded-lg bg-sky-500/20 text-sky-300">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Conference Dates</p>
+              <p class="text-base font-bold text-white mt-0.5">November 28–29, 2026</p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-xl flex items-start gap-3.5">
+            <div class="p-2.5 rounded-lg bg-emerald-500/20 text-emerald-300">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Location</p>
+              <p class="text-base font-bold text-white mt-0.5">UEA Campus, Norwich</p>
+              <p class="text-xs text-slate-300">United Kingdom</p>
+            </div>
+          </div>
+
+          <!-- Deadline -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-xl flex items-start gap-3.5">
+            <div class="p-2.5 rounded-lg bg-amber-500/20 text-amber-300">
+              <i data-lucide="clock" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Abstract Deadline</p>
+              <p class="text-base font-bold text-amber-300 mt-0.5">October 15, 2026</p>
+              <p class="text-xs text-slate-300">23:59 GMT</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Buttons -->
+        <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+          <a href="#submit" class="bg-gradient-to-r from-sky-500 to-teal-500 hover:from-sky-600 hover:to-teal-600 text-white font-semibold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-sky-500/25 transition-all flex items-center gap-2.5 text-base">
+            <i data-lucide="file-up" class="w-5 h-5"></i>
+            <span>Submit Abstract</span>
+          </a>
+          <a href="#dates" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium px-6 py-3.5 rounded-xl backdrop-blur-sm transition-all flex items-center gap-2 text-base">
+            <i data-lucide="calendar-days" class="w-5 h-5"></i>
+            <span>View Timeline</span>
+          </a>
+          <button onclick="downloadCalendarInvite()" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium px-5 py-3.5 rounded-xl backdrop-blur-sm transition-all flex items-center gap-2 text-sm" title="Add to your calendar">
+            <i data-lucide="plus-circle" class="w-4 h-4 text-sky-400"></i>
+            <span>Add to Calendar</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW / ABOUT SECTION -->
+  <section id="about" class="py-20 bg-white border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center space-y-3 mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-uea-600">Conference Overview</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Bridging Cognitive Foundations & Real-World Decisions
+          </h2>
+          <div class="w-16 h-1 bg-uea-600 mx-auto rounded-full mt-3"></div>
+        </div>
+
+        <div class="prose prose-lg text-slate-600 space-y-6 leading-relaxed">
+          <p class="text-lg sm:text-xl font-normal text-slate-700 leading-relaxed">
+            The <strong>School of Psychology</strong> and the <strong>Department of Behavioral Science</strong> at the <strong>University of East Anglia (UEA)</strong> invite submissions for this joint interdisciplinary conference on <strong>November 28–29, 2026</strong>.
+          </p>
+          <p>
+            Modern societal challenges—from climate transition and public health dilemmas to AI-mediated decision architectures and financial resilience—demand integrative approaches that transcend departmental boundaries. This symposium brings together cognitive psychologists, behavioral scientists, experimental economists, neuroscientists, and public policy practitioners.
+          </p>
+          <p>
+            Over two intensive days in Norwich, participants will share rigorous empirical findings, computational models, novel laboratory and field experiments, and evidence-informed interventions. We particularly welcome contributions from <strong>Early Career Researchers (ECRs)</strong> and <strong>PhD candidates</strong>, with dedicated interactive panels and mentorship sessions.
+          </p>
+        </div>
+
+        <!-- Key Highlights Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 pt-8 border-t border-slate-100">
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-uea-200 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-uea-700 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="users" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Interdisciplinary Dialogue</h3>
+            <p class="text-sm text-slate-600">Fostering deep synergy between psychological science and behavioral economic theory.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-uea-200 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="award" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">ECR & PhD Support</h3>
+            <p class="text-sm text-slate-600">Best Paper & Poster awards, dedicated feedback clinics, and travel subsidy opportunities.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-uea-200 transition-colors">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center mb-4 font-bold">
+              <i data-lucide="globe-2" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-1.5">Policy & Impact Track</h3>
+            <p class="text-sm text-slate-600">Bridging academic research with actionable design for governmental and organizational policy.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THEMES & TOPICS OF INTEREST -->
+  <section id="themes" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-uea-600">Submissions Scope</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Conference Tracks & Topics of Interest
+        </h2>
+        <p class="text-slate-600 text-base">
+          We invite paper, symposium, and poster submissions across the full spectrum of behavioral and psychological sciences.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        
+        <!-- Track 1 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5">
+              <i data-lucide="brain" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-blue-600">Track 01</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-4">Cognition, Judgement & Choice Architecture</h3>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 mt-0.5 shrink-0"></i>
+                <span>Cognitive mechanisms and heuristics in decision-making</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 mt-0.5 shrink-0"></i>
+                <span>Perception of risk, probability weighting, and ambiguity</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 mt-0.5 shrink-0"></i>
+                <span>Bounded rationality and cognitive modeling</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 mt-0.5 shrink-0"></i>
+                <span>Emotion, affect, and visceral influences on judgment</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-500 mt-0.5 shrink-0"></i>
+                <span>Temporal discounting and intertemporal trade-offs</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-medium text-slate-400">
+            Chair: Cognitive & Experimental Psychology Unit
+          </div>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-500"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Track 02</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-4">Applied Behaviour, Nudges & Public Policy</h3>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+                <span>Behavioral interventions in health, wellness & nutrition</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+                <span>Pro-environmental actions & climate change decision-making</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+                <span>Financial decision-making, consumer debt & savings behavior</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+                <span>Digital choice architectures, algorithmic nudges & AI trust</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 mt-0.5 shrink-0"></i>
+                <span>Combating online misinformation and epistemic vigilance</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-medium text-slate-400">
+            Chair: Behavioural Science & Policy Initiative
+          </div>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 to-rose-500"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-5">
+              <i data-lucide="network" class="w-6 h-6"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Track 03</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-4">Social Dynamics, Norms & Experimental Methods</h3>
+            <ul class="space-y-2.5 text-sm text-slate-600">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+                <span>Social identity, peer conformity, and social norm transmission</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+                <span>Cooperation, public goods, and institutional trust</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+                <span>Methodological innovations: lab, field & online experiments</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+                <span>Replicability, open science practices, and pre-registration</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 mt-0.5 shrink-0"></i>
+                <span>Neuroeconomics and physiological measurements</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-medium text-slate-400">
+            Chair: Social Psychology & Quantitative Methods
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION FORMATS & GUIDELINES -->
+  <section id="guidelines" class="py-20 bg-white border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        
+        <div class="text-center space-y-3 mb-14">
+          <span class="text-xs font-bold uppercase tracking-widest text-uea-600">Submission Guidelines</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            How to Submit Your Work
+          </h2>
+          <p class="text-slate-600">Please review the submission formats and author requirements carefully.</p>
+        </div>
+
+        <!-- Format Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div class="border border-slate-200 rounded-xl p-5 bg-slate-50/60">
+            <span class="inline-block px-2.5 py-1 bg-blue-100 text-blue-800 text-xs font-bold rounded-md mb-3">Format A</span>
+            <h4 class="font-bold text-slate-900 mb-1">Oral Presentation</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              20-minute talk + 10 minutes moderated audience discussion. Ideal for completed empirical projects or mature theoretical models.
+            </p>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl p-5 bg-slate-50/60">
+            <span class="inline-block px-2.5 py-1 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-md mb-3">Format B</span>
+            <h4 class="font-bold text-slate-900 mb-1">Thematic Symposium</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              90-minute session featuring 3–4 coherent papers under a shared umbrella, led by a designated chair and discussant.
+            </p>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl p-5 bg-slate-50/60">
+            <span class="inline-block px-2.5 py-1 bg-amber-100 text-amber-800 text-xs font-bold rounded-md mb-3">Format C</span>
+            <h4 class="font-bold text-slate-900 mb-1">Poster Session</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Presented during dedicated evening reception. Excellent for works-in-progress, registered reports, and ECR research.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technical Submission Requirements Checklist -->
+        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-7 sm:p-9 space-y-6">
+          <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <i data-lucide="file-check" class="w-5 h-5 text-uea-600"></i>
+            <span>Submission Checklist & Requirements</span>
+          </h3>
+
+          <div class="space-y-4 text-sm text-slate-700">
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-uea-100 text-uea-700 font-bold flex items-center justify-center shrink-0 text-xs">1</div>
+              <div>
+                <strong>Extended Abstract Length:</strong> Maximum <strong>800 words</strong> (excluding title, keywords, references, and up to 1 summary table/figure).
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-uea-100 text-uea-700 font-bold flex items-center justify-center shrink-0 text-xs">2</div>
+              <div>
+                <strong>Required Structure:</strong> Submissions must clearly state:
+                <ul class="list-disc list-inside mt-1 ml-2 text-slate-600 space-y-1">
+                  <li><strong>Background & Theoretical Motivation</strong></li>
+                  <li><strong>Methodology & Experimental Design</strong> (sample sizes, stimuli, procedure)</li>
+                  <li><strong>Key Findings / Statistical Results</strong> (or anticipated for works in progress)</li>
+                  <li><strong>Theoretical & Policy Implications</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-uea-100 text-uea-700 font-bold flex items-center justify-center shrink-0 text-xs">3</div>
+              <div>
+                <strong>Anonymisation for Blind Review:</strong> All papers undergo double-blind peer review. Please eliminate author names, institutions, and identifying self-citations in the text.
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-6 h-6 rounded-full bg-uea-100 text-uea-700 font-bold flex items-center justify-center shrink-0 text-xs">4</div>
+              <div>
+                <strong>File Format:</strong> Single PDF document (12pt font, 1.5 line spacing, standard margins).
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPORTANT DATES TIMELINE -->
+  <section id="dates" class="py-20 bg-slate-900 text-white relative">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto">
+        
+        <div class="text-center space-y-3 mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-sky-400">Important Dates</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Key Deadlines & Milestones
+          </h2>
+          <p class="text-slate-400 text-sm">Please mark these dates in your calendar.</p>
+        </div>
+
+        <div class="relative border-l-2 border-slate-700 ml-4 md:ml-32 space-y-10">
+          
+          <!-- Event 1 -->
+          <div class="relative pl-7 md:pl-10 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-800 border-2 border-slate-500 group-hover:border-sky-400 transition-colors"></div>
+            <div class="md:flex md:items-baseline md:justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white">Call for Papers Opens</h3>
+                <p class="text-sm text-slate-400">Online submission system begins accepting abstracts</p>
+              </div>
+              <span class="inline-block mt-1 md:mt-0 text-sm font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">September 1, 2026</span>
+            </div>
+          </div>
+
+          <!-- Event 2 - HIGHLIGHT -->
+          <div class="relative pl-7 md:pl-10 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-400 border-2 border-amber-300 ring-4 ring-amber-400/20"></div>
+            <div class="md:flex md:items-baseline md:justify-between bg-amber-500/10 border border-amber-500/30 p-4 rounded-xl">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-base sm:text-lg font-bold text-amber-300">Abstract Submission Deadline</h3>
+                  <span class="text-[10px] font-bold uppercase bg-amber-500 text-slate-900 px-2 py-0.5 rounded">Crucial</span>
+                </div>
+                <p class="text-sm text-slate-300 mt-0.5">Extended abstracts (800 words) due by 23:59 GMT</p>
+              </div>
+              <span class="inline-block mt-2 md:mt-0 text-base font-bold text-amber-300 bg-amber-950/60 px-3.5 py-1 rounded-lg border border-amber-500/40">October 15, 2026</span>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="relative pl-7 md:pl-10 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-800 border-2 border-slate-500 group-hover:border-sky-400 transition-colors"></div>
+            <div class="md:flex md:items-baseline md:justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white">Author Notification</h3>
+                <p class="text-sm text-slate-400">Acceptance decisions and reviewer feedback sent via email</p>
+              </div>
+              <span class="inline-block mt-1 md:mt-0 text-sm font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">October 30, 2026</span>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="relative pl-7 md:pl-10 group">
+            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-800 border-2 border-slate-500 group-hover:border-sky-400 transition-colors"></div>
+            <div class="md:flex md:items-baseline md:justify-between">
+              <div>
+                <h3 class="text-base sm:text-lg font-bold text-white">Author & Early Bird Registration</h3>
+                <p class="text-sm text-slate-400">At least one author per accepted paper must register</p>
+              </div>
+              <span class="inline-block mt-1 md:mt-0 text-sm font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">November 12, 2026</span>
+            </div>
+          </div>
+
+          <!-- Event 5 - CONFERENCE DAYS -->
+          <div class="relative pl-7 md:pl-10 group">
+            <div class="absolute -left-[10px] top-1.5 w-5 h-5 rounded-full bg-emerald-400 border-2 border-white ring-4 ring-emerald-400/20"></div>
+            <div class="md:flex md:items-baseline md:justify-between bg-gradient-to-r from-uea-navy to-slate-800 border border-emerald-500/40 p-4 rounded-xl">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-lg font-extrabold text-white">Conference Days</h3>
+                  <span class="text-[10px] font-bold uppercase bg-emerald-400 text-slate-950 px-2 py-0.5 rounded">Main Event</span>
+                </div>
+                <p class="text-sm text-slate-300 mt-0.5">Keynotes, parallel sessions, posters & conference gala</p>
+              </div>
+              <span class="inline-block mt-2 md:mt-0 text-base font-extrabold text-emerald-300 bg-slate-900/90 px-4 py-1.5 rounded-lg border border-emerald-500/50">November 28–29, 2026</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMISSION FORM / PORTAL SECTION -->
+  <section id="submit" class="py-20 bg-slate-100 border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 p-8 sm:p-12">
+        
+        <div class="text-center space-y-2 mb-8">
+          <div class="inline-flex p-3 rounded-full bg-sky-50 text-uea-600 mb-2">
+            <i data-lucide="send" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Submit Your Abstract</h2>
+          <p class="text-sm text-slate-600">
+            Submit your 800-word extended abstract directly below or connect your institutional submission portal.
+          </p>
+        </div>
+
+        <form id="submissionForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="authorName">Corresponding Author *</label>
+              <input type="text" id="authorName" required placeholder="e.g., Dr. Jane Smith" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="authorEmail">Email Address *</label>
+              <input type="email" id="authorEmail" required placeholder="name@institution.ac.uk" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="affiliation">Institution / University *</label>
+              <input type="text" id="affiliation" required placeholder="e.g., University of East Anglia" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="authorRole">Career Stage</label>
+              <select id="authorRole" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm bg-white">
+                <option value="faculty">Faculty / Senior Researcher</option>
+                <option value="postdoc">Postdoctoral Researcher</option>
+                <option value="phd">PhD / Postgraduate Candidate</option>
+                <option value="practitioner">Policy / Industry Practitioner</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="paperTitle">Paper / Abstract Title *</label>
+            <input type="text" id="paperTitle" required placeholder="Enter the full title of your paper" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm" />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="formatType">Presentation Format *</label>
+              <select id="formatType" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm bg-white">
+                <option value="oral">Oral Presentation (20 min + 10 min Q&A)</option>
+                <option value="symposium">Thematic Symposium (90 min session)</option>
+                <option value="poster">Poster Presentation</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="trackType">Preferred Track *</label>
+              <select id="trackType" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm bg-white">
+                <option value="track1">Track 1: Cognition & Choice Architecture</option>
+                <option value="track2">Track 2: Applied Behaviour & Public Policy</option>
+                <option value="track3">Track 3: Social Dynamics & Methods</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="abstractText">
+              Extended Abstract (Max 800 words) *
+            </label>
+            <textarea id="abstractText" rows="6" required placeholder="Include: Background, Methodology, Key Findings, and Implications..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm font-sans"></textarea>
+            <p class="text-xs text-slate-500 mt-1">Make sure identifying information is removed for blind peer review.</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5" for="keywords">Keywords (3 to 5 separated by commas) *</label>
+            <input type="text" id="keywords" required placeholder="e.g. Heuristics, Climate Policy, Field Experiment" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-uea-600 text-sm" />
+          </div>
+
+          <!-- File Upload Simulation -->
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Optional Anonymised PDF Upload</label>
+            <div class="border-2 border-dashed border-slate-300 hover:border-uea-600 rounded-xl p-6 text-center cursor-pointer transition-colors bg-slate-50">
+              <i data-lucide="upload-cloud" class="w-8 h-8 text-slate-400 mx-auto mb-2"></i>
+              <p class="text-xs font-semibold text-slate-700">Click to upload or drag and drop your PDF</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Maximum file size: 10MB (PDF format only)</p>
+              <input type="file" accept=".pdf" class="hidden" id="pdfUpload" onchange="updateFileName(this)" />
+            </div>
+            <p id="fileNameDisplay" class="text-xs text-uea-700 font-medium mt-2 hidden"></p>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-uea-navy hover:bg-uea-800 text-white font-bold py-3.5 px-6 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>Submit Application for Review</span>
+            </button>
+          </div>
+
+          <p class="text-center text-xs text-slate-500">
+            Alternatively, if you are using EasyChair, Qualtrics, or Google Forms, you can link this button directly to your URL.
+          </p>
+        </form>
+
+        <!-- Confirmation Alert Box (Hidden initially) -->
+        <div id="submitSuccessMsg" class="hidden mt-6 p-6 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-center space-y-2">
+          <div class="w-12 h-12 bg-emerald-200 text-emerald-800 rounded-full flex items-center justify-center mx-auto mb-2">
+            <i data-lucide="check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="text-lg font-bold">Abstract Successfully Received!</h4>
+          <p class="text-sm text-emerald-800">
+            Thank you for your submission. A confirmation email has been dispatched to your provided address. Peer-review notifications will be released by <strong>October 30, 2026</strong>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE & TRAVEL INFO -->
+  <section id="venue" class="py-20 bg-white border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        
+        <div class="text-center space-y-3 mb-14">
+          <span class="text-xs font-bold uppercase tracking-widest text-uea-600">Location & Travel</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            The Host Institution: University of East Anglia (UEA)
+          </h2>
+          <p class="text-slate-600">Norwich Research Park, Norwich, Norfolk, NR4 7TJ, United Kingdom</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <div class="space-y-4">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                <i data-lucide="train" class="w-5 h-5 text-uea-600"></i>
+                <span>By Rail (London & Regional)</span>
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Direct trains run every 30 minutes from <strong>London Liverpool Street</strong> to Norwich Railway Station (approx. 90 minutes). From Norwich station, frequent bus routes (25 & 26) run straight to the UEA campus.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                <i data-lucide="plane" class="w-5 h-5 text-uea-600"></i>
+                <span>International Flights</span>
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                <strong>London Stansted Airport</strong> offers direct train and coach links to Norwich (~1h 50m). Norwich International Airport connects with Amsterdam Schiphol for global connections.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+              <h4 class="font-bold text-slate-900 mb-2 flex items-center gap-2">
+                <i data-lucide="landmark" class="w-5 h-5 text-uea-600"></i>
+                <span>Campus Experience & Sainsbury Centre</span>
+              </h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Situated in over 300 acres of tranquil parkland, UEA boasts world-renowned modernist architecture and the world-famous <em>Sainsbury Centre for Visual Arts</em>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Campus Card / Visual box -->
+          <div class="relative rounded-2xl overflow-hidden border border-slate-300 shadow-lg bg-slate-900 text-white p-8 flex flex-col justify-between min-h-[380px]">
+            <div class="absolute inset-0 bg-gradient-to-br from-uea-navy/90 to-slate-950/95 z-10"></div>
+            <!-- Aesthetic abstract shape -->
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-sky-500/20 rounded-full blur-2xl"></div>
+
+            <div class="relative z-20 space-y-4">
+              <span class="inline-block px-3 py-1 bg-sky-500/20 border border-sky-400/30 rounded-full text-xs font-semibold text-sky-300">
+                Norwich · England's First UNESCO City of Literature
+              </span>
+              <h3 class="text-2xl font-bold text-white leading-snug">
+                An inspiring setting for interdisciplinary inquiry
+              </h3>
+              <p class="text-sm text-slate-300 leading-relaxed">
+                Norwich combines medieval heritage with pioneering scientific research. UEA's campus offers modern, fully equipped lecture theatres, seamless Wi-Fi (Eduroam), and on-site hospitality.
+              </p>
+            </div>
+
+            <div class="relative z-20 pt-6 border-t border-slate-800 flex flex-wrap gap-4 text-xs text-slate-300">
+              <div>
+                <span class="block text-slate-500 uppercase text-[10px] font-bold">Accommodation</span>
+                <span class="font-medium text-white">Campus & City Centre Hotels</span>
+              </div>
+              <div>
+                <span class="block text-slate-500 uppercase text-[10px] font-bold">Format</span>
+                <span class="font-medium text-white">In-Person with Hybrid Keynotes</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER & CONTACT -->
+  <footer id="contact" class="bg-uea-navy text-slate-400 py-16 text-sm">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-slate-800">
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-uea-600 text-white font-bold flex items-center justify-center">UEA</div>
+            <span class="font-bold text-white text-base">Mind, Behaviour & Decision-Making</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Joint annual symposium hosted by the Department of Behavioral Science and the School of Psychology at the University of East Anglia.
+          </p>
+          <p class="text-xs text-slate-400">
+            Norwich Research Park, Norwich, NR4 7TJ, UK
+          </p>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-white transition-colors">Conference Overview</a></li>
+            <li><a href="#themes" class="hover:text-white transition-colors">Tracks & Themes</a></li>
+            <li><a href="#guidelines" class="hover:text-white transition-colors">Submission Format & Guidelines</a></li>
+            <li><a href="#dates" class="hover:text-white transition-colors">Important Dates (Nov 28–29)</a></li>
+            <li><a href="#venue" class="hover:text-white transition-colors">Travel & Accommodation</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider">Contact & Inquiries</h4>
+          <p class="text-xs text-slate-400">
+            For academic queries, panel proposals, or accessibility arrangements, please contact the secretariat:
+          </p>
+          <p class="text-xs text-sky-400 font-mono">conference.behaviour@uea.ac.uk</p>
+          <div class="pt-2">
+            <a href="#submit" class="inline-block px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold rounded-lg border border-slate-700 transition-colors">
+              Submit Your Paper
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <div>
+          &copy; 2026 University of East Anglia · School of Psychology & Department of Behavioral Science. All rights reserved.
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+          <a href="#" class="hover:text-slate-400">Accessibility Statement</a>
+          <a href="#" class="hover:text-slate-400">UEA Home</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR INTERACTIONS -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Handle Form Submit
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('submissionForm');
+      const successMsg = document.getElementById('submitSuccessMsg');
+      
+      // Visual feedback
+      form.classList.add('opacity-40', 'pointer-events-none');
+      setTimeout(() => {
+        form.classList.add('hidden');
+        successMsg.classList.remove('hidden');
+        lucide.createIcons();
+      }, 600);
+    }
+
+    // Update File Name Display
+    function updateFileName(input) {
+      const display = document.getElementById('fileNameDisplay');
+      if (input.files && input.files[0]) {
+        display.textContent = 'Selected: ' + input.files[0].name;
+        display.classList.remove('hidden');
+      }
+    }
+
+    // Generate and download .ics calendar invite
+    function downloadCalendarInvite() {
+      const icsData = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//University of East Anglia//Mind Behaviour Conference//EN",
+        "BEGIN:VEVENT",
+        "SUMMARY:Mind, Behaviour & Decision-Making Conference 2026 (UEA)",
+        "DESCRIPTION:Joint conference hosted by Department of Behavioral Science & School of Psychology, University of East Anglia.",
+        "LOCATION:University of East Anglia, Norwich Research Park, Norwich, UK",
+        "DTSTART:20261128T090000Z",
+        "DTEND:20261129T180000Z",
+        "STATUS:CONFIRMED",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute('download', 'UEA_Conference_Nov28-29_2026.ics');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
