@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nudge Workshop: Nudge, Nudge+, Boost, Sludge | University of East Anglia</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-40D9Z1E8TL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-40D9Z1E8TL');
+  </script>
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -145,6 +154,7 @@
 
         <!-- Key Meta Information Cards -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-4 max-w-3xl mx-auto text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-4 max-w-5xl mx-auto text-left">
           <!-- Dates -->
           <div class="bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-xl flex items-start gap-3.5">
             <div class="p-2.5 rounded-lg bg-sky-500/20 text-sky-300">
@@ -177,6 +187,18 @@
               <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Abstract Deadline</p>
               <p class="text-base font-bold text-amber-300 mt-0.5">October 15, 2026</p>
               <p class="text-xs text-slate-300">23:59 GMT</p>
+            </div>
+          </div>
+
+          <!-- Registration Fee -->
+          <div class="bg-white/10 backdrop-blur-md border border-white/15 p-4 rounded-xl flex items-start gap-3.5">
+            <div class="p-2.5 rounded-lg bg-indigo-500/20 text-indigo-300">
+              <i data-lucide="ticket" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-400 font-medium">Registration Fee</p>
+              <p class="text-base font-bold text-indigo-200 mt-0.5">100 GBP</p>
+              <p class="text-xs text-slate-300">Per Delegate</p>
             </div>
           </div>
         </div>
@@ -470,6 +492,23 @@
           </div>
         </div>
 
+        <!-- Registration Fee Banner -->
+        <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-uea-50 via-sky-50 to-indigo-50 border border-sky-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-uea-navy text-white flex items-center justify-center font-bold shrink-0 shadow-sm">
+              <i data-lucide="ticket" class="w-6 h-6 text-sky-400"></i>
+            </div>
+            <div>
+              <h4 class="text-base font-bold text-slate-900">Registration Fee</h4>
+              <p class="text-xs text-slate-600 mt-0.5">Includes full access to all workshop sessions, keynote addresses, conference catering, and materials.</p>
+            </div>
+          </div>
+          <div class="sm:text-right shrink-0 bg-white px-5 py-2.5 rounded-xl border border-sky-200 shadow-sm">
+            <span class="block text-xs uppercase tracking-wider font-semibold text-slate-500">Standard Delegate Fee</span>
+            <span class="text-2xl font-extrabold text-uea-navy">100 GBP</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -535,6 +574,8 @@
               <div>
                 <h3 class="text-base sm:text-lg font-bold text-white">Author & Early Bird Registration</h3>
                 <p class="text-sm text-slate-400">At least one author per accepted paper must register</p>
+                <h3 class="text-base sm:text-lg font-bold text-white">Author & Delegate Registration</h3>
+                <p class="text-sm text-slate-400">Registration fee: <strong class="text-sky-300">100 GBP</strong> (at least one author per paper must register)</p>
               </div>
               <span class="inline-block mt-1 md:mt-0 text-sm font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-md">November 12, 2026</span>
             </div>
